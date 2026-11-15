@@ -1,0 +1,20 @@
+# Puerto y protocolo
+Port 22
+Protocol 2
+
+# Algoritmos de intercambio de claves (Key Exchange)
+KexAlgorithms curve25519-sha256
+
+# Cifrados simétricos
+Ciphers aes256-ctr
+
+# Códigos de autenticación de mensajes (MAC)
+MACs hmac-sha2-256
+
+# Algoritmos de clave de host (Host Key)
+HostKeyAlgorithms ssh-ed25519
+
+# Configuraciones básicas para permitir la conexión
+PermitRootLogin yes
+PasswordAuthentication yes
+UsePAM no
